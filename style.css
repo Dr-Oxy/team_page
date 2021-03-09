@@ -59,9 +59,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-
-  gap: 10px;
   align-items: end;
+  gap: 10px;
 }
 
 .dtl {
@@ -69,6 +68,10 @@ section {
   width: 138px;
   margin: 0 auto;
   position: relative;
+}
+
+.dtl:nth-child(odd) {
+  margin-bottom: 40px;
 }
 
 .bg-image {
@@ -100,12 +103,6 @@ section {
   background: #333 url("./img/photo6.png") center center/cover no-repeat;
 }
 
-.two,
-.four,
-.six {
-  margin-top: -90px;
-}
-
 .name {
   font-size: 14px;
   font-weight: 600;
@@ -121,8 +118,4 @@ section {
   font-size: 10px;
   text-transform: uppercase;
   padding: 0 10px;
-}
-
-.dtl:nth-child(odd) {
-  margin-bottom: 40px;
 }
